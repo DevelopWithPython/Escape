@@ -107,7 +107,7 @@ while con:
                 pos_change = -4
             if event.key == pygame.K_SPACE:
                 # Here if bullet is not on screen only when another bullet is fired
-                if bullet_state is 'ready':
+                if bullet_state == 'ready':
                     # position of bullet is changing according to the player pos
                     bulletX = pos1
                     fire_bullet(bulletX, bulletY)
@@ -157,7 +157,7 @@ while con:
     if bulletY <= 0:
         bulletY = 480
         bullet_state = 'ready'
-    if bullet_state is 'fire':
+    if bullet_state == 'fire':
         fire_bullet(bulletX, bulletY)
         bulletY -= bulletY_change
 
