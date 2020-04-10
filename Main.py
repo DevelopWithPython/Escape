@@ -128,7 +128,6 @@ while con:
             for j in range(na_of_enemies):
                 enemyY[i] = 1000
             game_over_text()
-            accuracy(no_of_bullets,)
             break
 
         enemyX[i] += enemyX_change[i]
